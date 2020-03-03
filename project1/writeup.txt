@@ -1,0 +1,30 @@
+2.1: Interpreting code
+
+/*-----BEGIN English BLOCK-----*/ 
+
+This is a simple program that takes the values of array X and
+copies them into the array Y using a loop. Using an integer N, 
+it counts down from 6 until all values are copied into array Y. 
+After N = 0, the assembly program then enters the stop block. 
+
+/*------END ENGLISH BLOCK-----*/ 
+
+/*-------BEGIN C BLOCK--------*/ 
+
+void main(){
+    int N = 6;
+    int X[] = {5, 3, -6, 19, 8, 12};
+    int Y[] = {0, 0, 0, 0, 0, 0};
+    for(N; N > 0; N--) Y[6-N] = X[6-N];
+    return;
+}
+
+/*---------END C BLOCK--------*/ 
+
+2.2: Decoding Instructions:
+
+stw r4, -28(r19)
+
+2.3: Endcoding Instructions:
+
+0x2D9D203A
