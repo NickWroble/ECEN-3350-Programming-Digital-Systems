@@ -6,7 +6,6 @@ sum_two:
     add r2, r4, r5
 ret
 
-
 .global op_three
 op_three:
 #a is r4, b is r5, c is r6
@@ -26,9 +25,12 @@ op_three:
     addi sp, sp, 12
 ret
 
-.global fibbonacci
-fibbonacci: 
+.global fibonacci
+fibonacci:
+    
 
+    subi r4, r4, 1
+    bgt r4, r0, fibonacci
 ret
 
 .end
